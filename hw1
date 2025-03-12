@@ -1,0 +1,7 @@
+Фрагмент из консоли:
+
+thai=# SELECT COUNT(*) FROM book.ride;
+ count  
+--------
+ 144000
+(1 row)
