@@ -1,12 +1,12 @@
 1. Создать таблицу accounts(id integer, amount numeric); </br>
 2. Добавить несколько записей и подключившись через 2 терминала добиться ситуации взаимоблокировки (deadlock). </br>
-        postgres=# TABLE accounts;
-         id | amount 
-        ----+--------
-          1 | 200.00
-          2 | 300.00
-          3 | 400.00
-        (3 rows)
+        `postgres=# TABLE accounts; `</br>`
+         id | amount `</br>`
+        ----+--------`</br>`
+          1 | 200.00 `</br>`
+          2 | 300.00 `</br>`
+          3 | 400.00 `</br>`
+        (3 rows)` 
 4. Посмотреть логи и убедиться, что информация о дедлоке туда попала. </br>
   `
   2025-03-20 16:11:51.969 MSK [1028] postgres@postgres STATEMENT:  UPDATE acoounts SET amount = 380 WHERE id = 2; `</br>`
