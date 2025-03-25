@@ -8,7 +8,7 @@
 
 ## Режимы `pool_mode`
 
-### **pool\_mode: statement**
+### **statement**
 
 ```
 pgbench (17.4 (Debian 17.4-1.pgdg120+2))
@@ -26,7 +26,7 @@ initial connection time = 795.502 ms
 tps = 15076.027441 (without initial connection time)
 ```
 
-### **pool\_mode: transaction**
+### **transaction**
 
 ```
 pgbench (17.4 (Debian 17.4-1.pgdg120+2))
@@ -44,7 +44,7 @@ initial connection time = 755.748 ms
 tps = 15129.935058 (without initial connection time)
 ```
 
-### **pool\_mode: session**
+### **session**
 
 ```
 pgbench (17.4 (Debian 17.4-1.pgdg120+2))
