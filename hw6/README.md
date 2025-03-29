@@ -2,7 +2,6 @@
 ### **Сингл инстанс**
 **запись**
 ```
-postgres@postgre1:/home/zakaryaev.m5$ /usr/lib/postgresql/17/bin/pgbench -c 8 -j 4 -T 10 -f ~/workload2.sql -n -U postgres -p 5432 thai
 pgbench (17.4 (Debian 17.4-1.pgdg120+2))
 transaction type: /var/lib/postgresql/workload2.sql
 scaling factor: 1
@@ -36,7 +35,6 @@ tps = 28491.157544 (without initial connection time)
 ### **C репликой**
 **запись**
 ```
-postgres@postgre1:/home/zakaryaev.m5$ /usr/lib/postgresql/17/bin/pgbench -c 8 -j 4 -T 10 -f ~/workload2.sql -n -U postgres -p 5432 thai
 pgbench (17.4 (Debian 17.4-1.pgdg120+2))
 transaction type: /var/lib/postgresql/workload2.sql
 scaling factor: 1
@@ -53,7 +51,6 @@ tps = 4273.894972 (without initial connection time)
 ```
 **чтение**
 ```
-postgres@postgre1:/home/zakaryaev.m5$ /usr/lib/postgresql/17/bin/pgbench -c 8 -j 4 -T 10 -f ~/workload.sql -n -U postgres thai
 pgbench (17.4 (Debian 17.4-1.pgdg120+2))
 transaction type: /var/lib/postgresql/workload.sql
 scaling factor: 1
